@@ -5,14 +5,14 @@
 ; Check github repo for setup instructions & help
 ; https://github.com/Esshahn/acme-assembly-vscode-template
 ; If you found this useful, I would be happy to know :)
-; 
+;
 ; https://www.twitter.com/awsm9000
 ; http://www.awsm.de
 ;==========================================================
- 
+
 ;==========================================================
 ; LABELS
-; Comment or uncomment the lines below 
+; Comment or uncomment the lines below
 ; Depending on your target machine
 ;==========================================================
 
@@ -47,12 +47,12 @@ SCREENRAM     = $0400
 * = BASIC
 
                 !byte $0b, $08
-                !byte $E3                     ; BASIC line number:  $E2=2018 $E3=2019 etc       
+                !byte $E3                     ; BASIC line number:  $E2=2018 $E3=2019 etc
                 !byte $07, $9E
-                !byte '0' + entry % 10000 / 1000        
-                !byte '0' + entry %  1000 /  100        
-                !byte '0' + entry %   100 /   10        
-                !byte '0' + entry %    10             
+                !byte '0' + entry % 10000 / 1000
+                !byte '0' + entry %  1000 /  100
+                !byte '0' + entry %   100 /   10
+                !byte '0' + entry %    10
                 !byte $00, $00, $00           ; end of basic
 
 
